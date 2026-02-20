@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-DATABASE = 'codnest.db'
+DATABASE = 'kodnest.db'
 
 # Initialize database
 def init_db():
@@ -244,4 +244,4 @@ def logout():
 
 if __name__ == '__main__':
     init_db()
-    app.run(debug=True, port=5050)
+    app.run(debug=False, port=5050)
